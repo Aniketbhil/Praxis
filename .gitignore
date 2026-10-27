@@ -1,0 +1,148 @@
+# ============================================================
+# Environment variables and secrets
+# ============================================================
+.env
+.env.*
+!.env.example
+!.env.template
+
+# Private keys, certificates, and credentials
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+credentials/
+
+# ============================================================
+# Python / FastAPI
+# ============================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Build / packaging
+.Python
+build/
+dist/
+wheels/
+*.egg
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python tooling
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.mypy_cache/
+.pyright/
+.ruff_cache/
+.hypothesis/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+logs/
+
+# ============================================================
+# Node.js / Next.js
+# ============================================================
+node_modules/
+.next/
+out/
+dist/
+build/
+.next-build/
+
+# Package manager / tooling caches
+.npm/
+.pnpm-store/
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.turbo/
+.parcel-cache/
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Test / coverage output
+coverage/
+.nyc_output/
+playwright-report/
+test-results/
+
+# ============================================================
+# PostgreSQL / local database data
+# ============================================================
+# Local PostgreSQL data directories (adjust to your project layout)
+postgres-data/
+pgdata/
+postgresql-data/
+
+# Database dumps and exports (review before committing)
+*.sql.gz
+*.dump
+*.backup
+
+# SQLite files sometimes used for local tests
+*.sqlite
+*.sqlite3
+*.db
+
+# ============================================================
+# Docker local overrides and generated files
+# ============================================================
+# Keep docker-compose.yml and Dockerfiles tracked.
+docker-compose.override.yml
+compose.override.yml
+.docker/
+
+# ============================================================
+# Uploaded files / generated application data
+# ============================================================
+uploads/
+media/
+tmp/
+temp/
+
+# ============================================================
+# IDEs and editors
+# ============================================================
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.example.json
+.idea/
+*.swp
+*.swo
+*~
+
+# ============================================================
+# OS-generated files
+# ============================================================
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ============================================================
+# Optional local environment files
+# ============================================================
+.python-version.local
+
+
+# docs (for personal use only)
+docs
